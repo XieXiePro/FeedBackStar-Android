@@ -1,0 +1,16 @@
+/build
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+.DS_Store
+/.idea
+# 过滤掉.gradle文件夹
+.gradle
+# 过滤掉local.properties文件
+/local.properties
+.externalNativeBuild
+*/build
+*/*.iml
+# Built application files
+*.apk
+*.ap_
