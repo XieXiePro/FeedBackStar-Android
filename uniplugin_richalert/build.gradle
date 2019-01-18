@@ -1,0 +1,61 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    compileOnly fileTree(dir: '../app/libs', include: ['dc_weexsdk-release.aar', 'uniapp-release.aar'])
+
+    implementation 'com.alibaba.android:bindingx-core:1.0.3'
+    implementation 'com.alibaba.android:bindingx_weex_plugin:1.0.3'
+
+    compileOnly "com.android.support:recyclerview-v7:28.0.0"
+    compileOnly "com.android.support:support-v4:28.0.0"
+    compileOnly "com.android.support:appcompat-v7:28.0.0"
+
+
+    /*路由*/
+    implementation 'com.alibaba:arouter-api:1.2.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.2'
+    /*rxjava*/
+    implementation 'io.reactivex:rxjava:1.3.0'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    /*防止RxJava中subscription导致内存泄漏*/
+    implementation 'com.trello:rxlifecycle:1.0'
+    implementation 'com.trello:rxlifecycle-components:1.0'
+}

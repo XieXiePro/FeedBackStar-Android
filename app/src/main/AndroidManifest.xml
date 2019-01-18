@@ -1,45 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="pro.xp.com.feedbackstar">
 
-    <application
-        android:name="io.dcloud.application.DCloudApplication"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        <supports-screens
+            android:anyDensity="true"
+            android:largeScreens="true"
+            android:normalScreens="true"
+            android:resizeable="true"
+            android:smallScreens="true" />
 
-        <activity
-            android:name="io.dcloud.PandoraEntry"
-            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+        <!-- Barcode(二维码)  begin -->
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+        <uses-feature android:name="android.hardware.camera" />
+        <uses-feature android:name="android.hardware.camera.autofocus" />
+
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+        <!-- Barcode(二维码)  end -->
+        <application
+            android:name=".AndroidApp"
+            android:allowBackup="true"
+            android:allowClearUserData="true"
+            android:debuggable="true"
+            android:icon="@drawable/icon"
             android:label="@string/app_name"
-            android:launchMode="singleTask"
-            android:hardwareAccelerated="true"
-            android:theme="@style/TranslucentTheme"
-            android:screenOrientation="user"
-            android:windowSoftInputMode="adjustResize" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:largeHeap="true"
+            android:supportsRtl="true"
+            tools:replace="android:label,android:icon,android:allowBackup,android:name">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <!--<activity android:name=".MainActivity">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <!-- 应用入口 -->
+            <activity
+                android:name="io.dcloud.PandoraEntry"
+                android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale"
+                android:hardwareAccelerated="true"
+                android:theme="@style/TranslucentTheme"
+                android:windowSoftInputMode="adjustResize">
+                <intent-filter>
+                    <data android:scheme="hbuilder" />
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
-        <!--<activity android:name=".LocationDialogDemo">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+                    <action android:name="android.intent.action.VIEW" />
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
-    </application>
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+                </intent-filter>
+                <intent-filter>
+                    <data android:mimeType="image/*" />
 
-</manifest>
+                    <action android:name="android.intent.action.SEND" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+
+            <meta-data
+                android:name="dcloud_uninview_background"
+                android:value="true" />
+
+            <activity android:name="uni.dcloud.io.uniplugin_richalert.MainActivity"></activity>
+        </application>
+
+    </manifest>

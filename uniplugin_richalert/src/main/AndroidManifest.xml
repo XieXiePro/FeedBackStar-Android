@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uni.dcloud.io.uniplugin_richalert" >
+
+    <!--<uses-permission android:name="android.permission.GET_TASKS"></uses-permission>-->
+
+    <application>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Base.Theme.AppCompat.Light"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale" />
+    </application>
+</manifest>

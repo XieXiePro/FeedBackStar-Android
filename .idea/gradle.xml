@@ -9,7 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/mocklocationlib" />
+            <option value="$PROJECT_DIR$/uniplugin_richalert" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

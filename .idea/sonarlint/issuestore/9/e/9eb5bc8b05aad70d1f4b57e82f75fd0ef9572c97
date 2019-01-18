@@ -1,0 +1,17 @@
+
+Osquid:S1444".Make this "public static defColor" field final(çØ‰şÿÿÿÿ8–àªû…-
+‹"squid:ClassVariableVisibilityCheck"SMake CONTENT a static final constant or non-public and provide accessors if needed.(ÄÃ¥¥ûÿÿÿÿ8–àªû…-
+Œ"squid:ClassVariableVisibilityCheck"YMake CONTENT_COLOR a static final constant or non-public and provide accessors if needed.(õˆøŞ8—àªû…-
+Œ"squid:ClassVariableVisibilityCheck"YMake CONTENT_ALIGN a static final constant or non-public and provide accessors if needed.(­«ÊŞ8—àªû…-
+‡"squid:ClassVariableVisibilityCheck"TMake POSITION a static final constant or non-public and provide accessors if needed.(µŸ»¸8—àªû…-
+†"squid:ClassVariableVisibilityCheck"SMake BUTTONS a static final constant or non-public and provide accessors if needed.(¨†˜é8—àªû…-
+‡"squid:ClassVariableVisibilityCheck"TMake CHECKBOX a static final constant or non-public and provide accessors if needed.(›ŠÄò8—àªû…-
+"squid:ClassVariableVisibilityCheck"WMake TITLE_ALIGN a static final constant or non-public and provide accessors if needed.(ê÷ıºûÿÿÿÿ8—àªû…-
+Œ"squid:ClassVariableVisibilityCheck"TMake defColor a static final constant or non-public and provide accessors if needed.(çØ‰şÿÿÿÿ8—àªû…-
+tsquid:S00116"RRename this field "CONTENT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÃ¥¥ûÿÿÿÿ8—àªû…-
+usquid:S00116"XRename this field "CONTENT_COLOR" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õˆøŞ8—àªû…-
+usquid:S00116"XRename this field "CONTENT_ALIGN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­«ÊŞ8—àªû…-
+psquid:S00116"SRename this field "POSITION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µŸ»¸8—àªû…-
+osquid:S00116"RRename this field "BUTTONS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨†˜é8—àªû…-
+psquid:S00116"SRename this field "CHECKBOX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›ŠÄò8—àªû…-
+xsquid:S00116"VRename this field "TITLE_ALIGN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê÷ıºûÿÿÿÿ8—àªû…-
