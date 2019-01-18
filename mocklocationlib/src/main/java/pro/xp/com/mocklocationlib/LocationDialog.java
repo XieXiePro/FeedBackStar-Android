@@ -30,6 +30,21 @@ public class LocationDialog extends Dialog {
     public LocationDialog( Context context, boolean cancelable, OnCancelListener cancelListener) {
         super(context, cancelable, cancelListener);
     }
+    /**
+     * 创建模拟定位对话框
+     */
+//    public void createLocationDialog(double latitude,double longitude) {
+//        LocationDialog.Builder builder = new LocationDialog.Builder(getContext());
+//        builder.setLatitude(latitude);
+//        builder.setLongitude(longitude);
+//        builder.setPositiveButton("知道了", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialog, int which) {
+//                dialog.dismiss();
+//            }
+//        });
+//        builder.create().show();
+//    }
 
     public static class Builder {
 

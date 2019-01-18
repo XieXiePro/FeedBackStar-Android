@@ -14,7 +14,7 @@ public class LocationDialogDemo extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initMockLocationData();
-        createLocationDialog();
+        createLocationDialog(mLocationBean.getLatitude(),mLocationBean.getLongitude());
     }
 
     private void initMockLocationData() {
@@ -36,10 +36,10 @@ public class LocationDialogDemo extends Activity {
     /**
      * 创建模拟定位对话框
      */
-    private void createLocationDialog() {
+    private void createLocationDialog(double latitude,double longitude) {
         LocationDialog.Builder builder = new LocationDialog.Builder(this);
-        builder.setLatitude(mLocationBean.getLatitude());
-        builder.setLongitude(mLocationBean.getLongitude());
+        builder.setLatitude(latitude);
+        builder.setLongitude(longitude);
         builder.setPositiveButton("知道了", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

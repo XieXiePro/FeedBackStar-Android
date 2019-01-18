@@ -1,0 +1,14 @@
+{
+  "nativePlugins": [
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "LocationDialog",
+          "class": "pro.xp.com.mocklocationlib.LocationDialog"
+        }
+      ]
+    }
+  ]
+}

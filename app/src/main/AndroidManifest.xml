@@ -10,21 +10,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--<activity-->
-            <!--android:name="io.dcloud.PandoraEntry"-->
-            <!--android:configChanges="orientation|keyboardHidden|keyboard|navigation"-->
-            <!--android:label="@string/app_name"-->
-            <!--android:launchMode="singleTask"-->
-            <!--android:hardwareAccelerated="true"-->
-            <!--android:theme="@style/TranslucentTheme"-->
-            <!--android:screenOrientation="user"-->
-            <!--android:windowSoftInputMode="adjustResize" >-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
+        <activity
+            android:name="io.dcloud.PandoraEntry"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:theme="@style/TranslucentTheme"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!--<activity android:name=".MainActivity">-->
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->
@@ -32,13 +33,13 @@
                 <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         <!--</activity>-->
-        <activity android:name=".LocationDialogDemo">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <!--<activity android:name=".LocationDialogDemo">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
     </application>
 
 </manifest>
