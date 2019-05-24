@@ -40,7 +40,7 @@ import javax.xml.parsers.SAXParserFactory;
 
 import uni.dcloud.io.uniplugin_richalert.Info.Person;
 import uni.dcloud.io.uniplugin_richalert.Info.SaxHelper;
-import uni.dcloud.io.uniplugin_richalert.utils.RouterCommonUtil;
+//import uni.dcloud.io.uniplugin_richalert.utils.RouterCommonUtil;
 
 
 public class RichAlert {
@@ -69,8 +69,8 @@ public class RichAlert {
     }
 
     private void startActivity() {
-        Bundle mBundle = new Bundle();
-        RouterCommonUtil.startFunctionActivity(mContext, -1, 0L, mBundle);
+//        Bundle mBundle = new Bundle();
+//        RouterCommonUtil.startFunctionActivity(mContext, -1, 0L, mBundle);
     }
 
     /**

@@ -40,3 +40,9 @@ j
 :app/src/main/assets/apps/__UNI__54FA04A/www/app-service.js,3\2\32f5598dc635e2cd22e85bde8c88ef83e05bb8e0
 c
 3uniplugin_richalert/src/main/res/values/strings.xml,b\7\b7dc4e9802169d7ed44ebd763f8ab7dede8280be
+…
+Uuniplugin_richalert/src/main/java/uni/dcloud/io/uniplugin_richalert/RouterParams.java,7\7\771c30baeb625111a1ac7dc2fa2d888f41ea386b
+i
+9app/src/main/java/pro/xp/com/feedbackstar/AndroidApp.java,b\8\b81461d8468deee539df5351aadb997b34ad8952
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
